@@ -66,6 +66,55 @@
             margin-right: 20px;
             opacity: 0.6;
         }
+
+        .featured-work {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-work a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .featured-label {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: #1a1a1a;
+            opacity: 0.5;
+            margin-bottom: 12px;
+        }
+
+        .featured-title {
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 400;
+            color: #1a1a1a;
+            opacity: 0.5;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .featured-arrow {
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            font-style: normal;
+        }
+
+        .featured-work a:hover .featured-arrow {
+            opacity: 1;
+        }
+
+        .featured-stats {
+            font-size: 14px;
+            color: #1a1a1a;
+            opacity: 0.5;
+        }
     </style>
 </head>
 <body>
@@ -75,7 +124,14 @@
         <p>Leading the rider experience at Bounce Daily to make EVs more accessible.</p>
         <p>Previously at <span class="highlight">Eazybe</span> where I achieved 129% increase in direct website revenue and generated 14M organic impressions via SEO.</p>
         <p>Co-founder & CEO at <span class="highlight">Droplet</span>, working on freewater.io for India.</p>
-        <p>Published case study: <a href="https://maybeeureka.substack.com/p/blinkit-zepto-case-study" target="_blank"><span class="highlight">"Blinkit or Zepto? A Rider's Journey in the Q-Commerce Revolution"</span></a> with 2.2M+ impressions, featured in national news outlets.</p>
+
+        <div class="featured-work">
+            <a href="https://maybeeureka.substack.com/p/blinkit-zepto-case-study" target="_blank">
+                <div class="featured-label">FEATURED WORK</div>
+                <div class="featured-title">"Blinkit or Zepto? A Rider's Journey in the Q-Commerce Revolution" <span class="featured-arrow">↗</span></div>
+                <div class="featured-stats">2.2M+ impressions • Featured in national news outlets</div>
+            </a>
+        </div>
 
         <div class="links">
             <a href="https://www.linkedin.com/in/aumvats/" target="_blank">LinkedIn</a>
